@@ -1,0 +1,22 @@
+﻿{
+    "name":  "nft-fixed-price-market",
+    "version":  "1.0.0",
+    "private":  true,
+    "description":  "Local synthetic NFT fixed-price listing market with royalty settlement and soulbound policy",
+    "type":  "commonjs",
+    "scripts":  {
+                    "build":  "tsc -p tsconfig.json",
+                    "typecheck":  "tsc -p tsconfig.json --noEmit",
+                    "start":  "node --disable-warning=ExperimentalWarning --import tsx src/server.ts",
+                    "test":  "node --disable-warning=ExperimentalWarning --import tsx --test test/*.test.ts",
+                    "accept":  "node --disable-warning=ExperimentalWarning --import tsx acceptance/run-acceptance.ts"
+                },
+    "dependencies":  {
+                         "fastify":  "^5.2.1"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^24.0.0",
+                            "tsx":  "^4.19.2",
+                            "typescript":  "^5.7.2"
+                        }
+}

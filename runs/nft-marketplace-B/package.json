@@ -1,0 +1,21 @@
+{
+  "name": "nft-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Fixed-price NFT listing marketplace with royalty splits and soulbound policy enforcement",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node --experimental-strip-types src/server.ts",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "accept": "node --experimental-strip-types scripts/accept.ts"
+  },
+  "dependencies": {
+    "fastify": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}

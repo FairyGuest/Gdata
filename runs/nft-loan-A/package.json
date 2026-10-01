@@ -1,0 +1,21 @@
+﻿{
+    "name":  "nft-collateral-loan",
+    "version":  "1.0.0",
+    "private":  true,
+    "type":  "module",
+    "description":  "NFT-collateralized loan service: escrowed NFTs, tick-based interest, exact repayment, threshold liquidation, conserved ledger.",
+    "scripts":  {
+                    "build":  "tsc -p tsconfig.json",
+                    "start":  "tsx src/server.ts",
+                    "accept":  "tsx test/accept.ts",
+                    "test":  "tsx test/accept.ts"
+                },
+    "dependencies":  {
+                         "fastify":  "^4.29.0"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^22.10.5",
+                            "tsx":  "^4.19.2",
+                            "typescript":  "^5.7.3"
+                        }
+}

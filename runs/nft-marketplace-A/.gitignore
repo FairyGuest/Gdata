@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.tmp-*
+artifacts/
+*.db
+*.db-shm
+*.db-wal
+*.log
+.tmp-test-locks/
+.tmp-acceptance-locks/
