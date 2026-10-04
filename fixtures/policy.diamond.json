@@ -1,0 +1,14 @@
+{
+  "roles": [
+    { "role": "left", "parent": "root" },
+    { "role": "right", "parent": "root" },
+    { "role": "bottom", "parent": "left" },
+    { "role": "bottom", "parent": "right" }
+  ],
+  "rules": [
+    { "role": "root", "effect": "allow", "resource": "docs/*", "action": "read" },
+    { "role": "root", "effect": "allow", "resource": "docs/public", "action": "*" },
+    { "role": "left", "effect": "allow", "resource": "docs/internal", "action": "write" },
+    { "role": "right", "effect": "deny", "resource": "docs/internal", "action": "write" }
+  ]
+}

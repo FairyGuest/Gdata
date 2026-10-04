@@ -1,0 +1,23 @@
+﻿{
+  "name": "rbac-policy-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RBAC authorization decision service: multi-level role inheritance, wildcard permissions, deny-overrides, hot policy updates",
+  "type": "module",
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node src/server/index.ts",
+    "test": "node --test --test-isolation=none test/*.test.ts",
+    "accept": "node scripts/accept.ts"
+  },
+  "dependencies": {
+    "fastify": "5.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.4",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}
