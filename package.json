@@ -1,0 +1,20 @@
+﻿{
+  "name": "nft-ticketing-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local NFT electronic ticketing service with seat-level issuance, transfer, refund and check-in.",
+  "scripts": {
+    "test": "node --experimental-sqlite --disable-warning=ExperimentalWarning --import tsx --test test/*.test.ts",
+    "accept": "node --experimental-sqlite --disable-warning=ExperimentalWarning --import tsx scripts/accept.ts"
+  },
+  "dependencies": {
+    "fastify": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
+
