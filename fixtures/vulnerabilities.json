@@ -1,0 +1,58 @@
+[
+  {
+    "id": "VULN-1001",
+    "packageName": "lib-e",
+    "affectedRange": ">=2.0.0 <=2.1.5",
+    "severity": "CRITICAL",
+    "summary": "lib-e remote code execution (boundary: 2.1.5 exactly included)",
+    "fixedIn": "2.1.6"
+  },
+  {
+    "id": "VULN-1002",
+    "packageName": "lib-e",
+    "affectedRange": ">=2.0.0 <2.1.5",
+    "severity": "HIGH",
+    "summary": "lib-e info leak (boundary: 2.1.5 exactly excluded, must NOT match resolved 2.1.5)",
+    "fixedIn": "2.1.5"
+  },
+  {
+    "id": "VULN-1003",
+    "packageName": "lib-c",
+    "affectedRange": ">=3.0.0 <3.1.0",
+    "severity": "HIGH",
+    "summary": "lib-c prototype pollution",
+    "fixedIn": "3.1.0"
+  },
+  {
+    "id": "VULN-1004",
+    "packageName": "lib-d",
+    "affectedRange": "1.4.2",
+    "severity": "MEDIUM",
+    "summary": "lib-d denial of service",
+    "fixedIn": "1.4.3"
+  },
+  {
+    "id": "VULN-1005",
+    "packageName": "lib-b",
+    "affectedRange": "<1.2.0",
+    "severity": "LOW",
+    "summary": "lib-b weak randomness",
+    "fixedIn": "1.2.0"
+  },
+  {
+    "id": "VULN-1006",
+    "packageName": "lib-f",
+    "affectedRange": ">=1.0.0 <1.10.0",
+    "severity": "MEDIUM",
+    "summary": "lib-f path traversal (must NOT match resolved 1.10.0; guards against lexicographic compare)",
+    "fixedIn": "1.10.0"
+  },
+  {
+    "id": "VULN-1007",
+    "packageName": "util-right",
+    "affectedRange": ">=1.0.0",
+    "severity": "LOW",
+    "summary": "util-right verbose error messages (reachable through cycle branch)",
+    "fixedIn": "2.0.0"
+  }
+]

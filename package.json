@@ -1,0 +1,17 @@
+{
+  "name": "sbom-scanner",
+  "version": "1.0.0",
+  "description": "SBOM vulnerability scanning service (TypeScript / Node.js / Fastify-compatible HTTP / SQLite)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "start": "node src/server/main.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node --test --test-isolation=none test/semver.test.ts test/graph.test.ts test/scanner.test.ts test/api.test.ts",
+    "accept": "node scripts/accept.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

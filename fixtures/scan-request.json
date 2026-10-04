@@ -1,0 +1,6 @@
+{
+  "scanId": "demo-scan-001",
+  "roots": [
+    "app@^1.0.0"
+  ]
+}
