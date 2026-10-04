@@ -1,0 +1,25 @@
+﻿{
+  "name": "cert-chain-a",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Certificate chain verification service (TypeScript / Fastify / SQLite)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/src/index.js",
+    "test": "npm run build && node dist/tests/index.js",
+    "demo": "npm run build && node dist/scripts/demo.js",
+    "accept": "npm run test && node dist/scripts/accept.js"
+  },
+  "dependencies": {
+    "fastify": "5.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.4",
+    "typescript": "5.9.3"
+  }
+}
+
