@@ -1,0 +1,27 @@
+[
+  {
+    "eventType": "user.login",
+    "payload": { "userId": "u-1001", "ip": "10.0.0.8" },
+    "timestamp": "2026-01-01T08:00:00.000Z"
+  },
+  {
+    "eventType": "order.created",
+    "payload": { "orderId": "o-5001", "amount": 199.5, "currency": "CNY" },
+    "timestamp": "2026-01-01T08:01:00.000Z"
+  },
+  {
+    "eventType": "order.paid",
+    "payload": { "orderId": "o-5001", "channel": "sandbox-pay" },
+    "timestamp": "2026-01-01T08:02:30.000Z"
+  },
+  {
+    "eventType": "order.shipped",
+    "payload": { "orderId": "o-5001", "carrier": "local-express" },
+    "timestamp": "2026-01-01T09:15:00.000Z"
+  },
+  {
+    "eventType": "user.logout",
+    "payload": { "userId": "u-1001" },
+    "timestamp": "2026-01-01T10:00:00.000Z"
+  }
+]

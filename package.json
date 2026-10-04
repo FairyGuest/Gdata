@@ -1,0 +1,23 @@
+﻿{
+  "name": "audit-chain-b",
+  "version": "1.0.0",
+  "description": "Tamper-evident audit log service with SHA-256 hash chaining",
+  "license": "ISC",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/src/index.js",
+    "test": "npm run build && node --test --test-isolation=none dist/test/*.test.js",
+    "demo": "npm run build && node dist/scripts/demo.js",
+    "accept": "npm run build && node dist/scripts/accept.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "fastify": "^5.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2"
+  }
+}
+
