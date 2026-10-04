@@ -1,0 +1,23 @@
+﻿{
+    "name":  "nft-indexer-a",
+    "version":  "1.0.0",
+    "private":  true,
+    "description":  "NFT mint/transfer/sale event indexer: strictly-sequential idempotent ingest, incremental projection and rebuild (Fastify + node:sqlite).",
+    "type":  "module",
+    "engines":  {
+                    "node":  "\u003e=22.5.0"
+                },
+    "scripts":  {
+                    "typecheck":  "tsc -p tsconfig.json --noEmit",
+                    "start":  "node --disable-warning=ExperimentalWarning src/server.ts",
+                    "test":  "node --disable-warning=ExperimentalWarning --test --test-isolation=none test/*.test.ts",
+                    "accept":  "node --disable-warning=ExperimentalWarning scripts/accept.ts"
+                },
+    "dependencies":  {
+                         "fastify":  "^5.2.1"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^24.0.0",
+                            "typescript":  "^5.7.2"
+                        }
+}
