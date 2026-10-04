@@ -1,0 +1,27 @@
+{
+  "name": "rbac-policy-service",
+  "version": "1.0.0",
+  "description": "RBAC decision service",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.test.ts",
+    "start": "node src/index.ts",
+    "accept": "node scripts/accept.ts",
+    "demo": "node scripts/demo.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "fastify": "^5.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
