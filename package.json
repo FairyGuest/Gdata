@@ -1,0 +1,25 @@
+﻿{
+  "name": "audit-chain-a",
+  "version": "1.0.0",
+  "description": "Append-only tamper-evident audit log with SHA-256 hash chaining",
+  "main": "dist/src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "test": "tsc && node --test --test-isolation=none dist/test/*.test.js",
+    "typecheck": "tsc --noEmit",
+    "demo": "tsc && node dist/scripts/demo.js",
+    "accept": "tsc && node dist/scripts/accept.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "fastify": "^4.29.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3"
+  }
+}
