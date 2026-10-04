@@ -1,0 +1,22 @@
+{
+  "name": "secrets-vault",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Versioned encrypted secrets vault with rotation grace period and transactional audit log",
+  "scripts": {
+    "start": "node --experimental-transform-types --no-warnings src/index.ts",
+    "demo": "node --experimental-transform-types --no-warnings scripts/demo.ts",
+    "test": "node --experimental-transform-types --no-warnings test/all.ts",
+    "accept": "node --experimental-transform-types --no-warnings scripts/accept.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "better-sqlite3": "13.0.3",
+    "fastify": "4.29.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "typescript": "5.9.3"
+  }
+}
