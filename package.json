@@ -1,0 +1,25 @@
+﻿{
+  "name": "api-key-quota-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API key quota management with hierarchical scopes (global/org/project), atomic 3-tier deduction, key rotation with grace period",
+  "type": "module",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "start": "node --experimental-transform-types --no-warnings src/index.ts",
+    "demo": "node --experimental-transform-types --no-warnings scripts/demo.ts",
+    "test": "node --experimental-transform-types --no-warnings test/all.ts",
+    "accept": "node --experimental-transform-types --no-warnings scripts/accept.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fastify": "^5.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
+
+
