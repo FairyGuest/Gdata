@@ -1,0 +1,25 @@
+﻿{
+  "name": "oauth2-auth-code-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "OAuth2 authorization code flow with PKCE, refresh token rotation, independent TTLs, VirtualClock, SQLite state.",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node --experimental-transform-types src/index.ts",
+    "demo": "node --experimental-transform-types scripts/demo.ts",
+    "test": "node --experimental-transform-types test/oauth2.test.ts",
+    "accept": "node --experimental-transform-types scripts/accept.ts"
+  },
+  "dependencies": {
+    "fastify": "4.29.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.4",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
