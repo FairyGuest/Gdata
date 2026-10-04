@@ -1,0 +1,21 @@
+{
+  "name": "nft-lending",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "NFT-collateralized lending service: escrowed pledge, tick-based interest, liquidation, conserved ledger",
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "accept": "tsx scripts/accept.ts"
+  },
+  "dependencies": {
+    "fastify": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
