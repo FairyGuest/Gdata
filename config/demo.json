@@ -1,0 +1,12 @@
+﻿{
+  "dbPath": "data/demo-vault.db",
+  "keyHex": "00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff",
+  "keyId": "fixture-key-1",
+  "host": "127.0.0.1",
+  "port": 8788,
+  "gracePeriodMs": 30000,
+  "maxValueBytes": 16384,
+  "maxVersionsPerSecret": 1000,
+  "useVirtualClock": true,
+  "clockStartMs": 1700000000000
+}

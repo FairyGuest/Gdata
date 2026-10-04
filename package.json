@@ -1,0 +1,26 @@
+﻿{
+    "name":  "secrets-vault-b",
+    "version":  "1.0.0",
+    "description":  "Versioned, encrypted secrets vault with rotation grace periods and transactional audit logging",
+    "license":  "ISC",
+    "type":  "commonjs",
+    "engines":  {
+                    "node":  "\u003e=22.5.0"
+                },
+    "scripts":  {
+                    "build":  "tsc",
+                    "test":  "tsc \u0026\u0026 node dist/test/vault.test.js",
+                    "accept":  "tsc \u0026\u0026 node dist/scripts/accept.js",
+                    "start":  "tsc \u0026\u0026 node dist/src/index.js",
+                    "demo":  "tsc \u0026\u0026 node dist/scripts/demo.js",
+                    "typecheck":  "tsc --noEmit"
+                },
+    "dependencies":  {
+                         "fastify":  "^5.12.5"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^26.6.3",
+                            "tsx":  "^4.23.15",
+                            "typescript":  "^5.9.3"
+                        }
+}
