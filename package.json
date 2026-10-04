@@ -1,0 +1,14 @@
+{
+  "name": "nft-indexer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NFT mint/transfer/sale event indexer: idempotent ingest, incremental + rebuild projections (Node built-ins only).",
+  "scripts": {
+    "start": "node --no-warnings --experimental-strip-types src/app.ts",
+    "accept": "node --no-warnings --experimental-strip-types scripts/accept.ts"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
