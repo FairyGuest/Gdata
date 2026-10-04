@@ -1,0 +1,20 @@
+﻿{
+  "name": "nft-collection-bids",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Collection-wide NFT bid matching service with royalty splits, SQLite-serialized commits and deterministic fixtures.",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "start": "tsx src/main.ts",
+    "test": "tsx --test test/kernel.test.ts test/contract.test.ts test/api.test.ts",
+    "accept": "tsx scripts/accept.ts"
+  },
+  "dependencies": { "fastify": "^5.2.1" },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.5.4"
+  }
+}
