@@ -1,0 +1,24 @@
+{
+  "name": "cert-chain-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Certificate chain validation service (Fastify + SQLite, HMAC-SHA256 simulated CA signatures)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "start": "node src/index.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node --test --test-isolation=none test/*.test.ts",
+    "accept": "node scripts/accept.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fastify": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
