@@ -1,0 +1,24 @@
+﻿{
+    "name":  "jwt-lifecycle-service",
+    "version":  "1.0.0",
+    "private":  true,
+    "description":  "JWT token lifecycle service: issue, refresh (rotate), revoke, validate. HMAC-SHA256, VirtualClock, SQLite.",
+    "type":  "module",
+    "engines":  {
+                    "node":  "\u003e=22.5.0"
+                },
+    "scripts":  {
+                    "build":  "tsc -p tsconfig.json",
+                    "start":  "node --experimental-transform-types src/index.ts",
+                    "demo":  "node --experimental-transform-types scripts/demo.ts",
+                    "test":  "node --experimental-transform-types --test --test-isolation=none test/*.test.ts",
+                    "accept":  "node --experimental-transform-types scripts/accept.ts"
+                },
+    "dependencies":  {
+                         "fastify":  "^5.2.0"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^22.10.0",
+                            "typescript":  "^5.7.2"
+                        }
+}
