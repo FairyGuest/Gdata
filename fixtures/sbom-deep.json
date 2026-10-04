@@ -1,0 +1,73 @@
+{
+  "idempotencyKey": "demo-deep-1",
+  "root": "app@1.0.0",
+  "packages": [
+    {
+      "name": "app",
+      "version": "1.0.0",
+      "dependencies": {
+        "lib-a": "1.0.0",
+        "lib-edge": "1.2.0",
+        "lib-cycle": "1.0.0"
+      }
+    },
+    {
+      "name": "lib-a",
+      "version": "1.0.0",
+      "dependencies": {
+        "lib-b": "1.0.0"
+      }
+    },
+    {
+      "name": "lib-b",
+      "version": "1.0.0",
+      "dependencies": {
+        "lib-c": "1.0.0"
+      }
+    },
+    {
+      "name": "lib-c",
+      "version": "1.0.0",
+      "dependencies": {
+        "lib-d": "1.0.0"
+      }
+    },
+    {
+      "name": "lib-d",
+      "version": "1.0.0",
+      "dependencies": {
+        "lib-deep": "1.4.0",
+        "lib-mid": "1.2.3"
+      }
+    },
+    {
+      "name": "lib-deep",
+      "version": "1.4.0",
+      "dependencies": {}
+    },
+    {
+      "name": "lib-mid",
+      "version": "1.2.3",
+      "dependencies": {}
+    },
+    {
+      "name": "lib-edge",
+      "version": "1.2.0",
+      "dependencies": {}
+    },
+    {
+      "name": "lib-cycle",
+      "version": "1.0.0",
+      "dependencies": {
+        "lib-cycle2": "1.0.0"
+      }
+    },
+    {
+      "name": "lib-cycle2",
+      "version": "1.0.0",
+      "dependencies": {
+        "lib-cycle": "1.0.0"
+      }
+    }
+  ]
+}

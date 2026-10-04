@@ -1,0 +1,58 @@
+[
+  {
+    "id": "VULN-001",
+    "package": "lib-deep",
+    "range": "<2.0.0",
+    "severity": "critical",
+    "summary": "Remote code execution in lib-deep before 2.0.0"
+  },
+  {
+    "id": "VULN-002",
+    "package": "lib-mid",
+    "range": ">=1.0.0 <1.5.0",
+    "severity": "high",
+    "summary": "Prototype pollution in lib-mid 1.x before 1.5.0"
+  },
+  {
+    "id": "VULN-003",
+    "package": "lib-edge",
+    "range": ">=1.0.0 <=1.2.0",
+    "severity": "medium",
+    "summary": "Boundary demo: lib-edge up to and including 1.2.0"
+  },
+  {
+    "id": "VULN-004",
+    "package": "lib-cycle",
+    "range": "*",
+    "severity": "low",
+    "summary": "Info leak in lib-cycle (all versions)"
+  },
+  {
+    "id": "VULN-005",
+    "package": "lib-shallow",
+    "range": "^1.0.0",
+    "severity": "low",
+    "summary": "Weak RNG in lib-shallow 1.x"
+  },
+  {
+    "id": "VULN-006",
+    "package": "lib-order-a",
+    "range": "*",
+    "severity": "medium",
+    "summary": "Ordering fixture: medium"
+  },
+  {
+    "id": "VULN-007",
+    "package": "lib-order-b",
+    "range": "*",
+    "severity": "critical",
+    "summary": "Ordering fixture: critical"
+  },
+  {
+    "id": "VULN-008",
+    "package": "lib-order-c",
+    "range": "*",
+    "severity": "high",
+    "summary": "Ordering fixture: high"
+  }
+]

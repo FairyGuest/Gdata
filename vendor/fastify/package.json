@@ -1,0 +1,8 @@
+{
+  "name": "fastify",
+  "version": "5.0.0-local",
+  "description": "Local Fastify-compatible HTTP framework (offline vendored subset)",
+  "type": "module",
+  "main": "index.js",
+  "exports": "./index.js"
+}

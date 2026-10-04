@@ -1,0 +1,17 @@
+{
+  "root": "app@1.0.0",
+  "packages": [
+    {
+      "name": "app",
+      "version": "1.0.0",
+      "dependencies": {
+        "lib-edge": "1.2.1"
+      }
+    },
+    {
+      "name": "lib-edge",
+      "version": "1.2.1",
+      "dependencies": {}
+    }
+  ]
+}

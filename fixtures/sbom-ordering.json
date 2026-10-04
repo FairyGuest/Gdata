@@ -1,0 +1,29 @@
+{
+  "root": "app@1.0.0",
+  "packages": [
+    {
+      "name": "app",
+      "version": "1.0.0",
+      "dependencies": {
+        "lib-order-a": "1.0.0",
+        "lib-order-b": "1.0.0",
+        "lib-order-c": "1.0.0"
+      }
+    },
+    {
+      "name": "lib-order-a",
+      "version": "1.0.0",
+      "dependencies": {}
+    },
+    {
+      "name": "lib-order-b",
+      "version": "1.0.0",
+      "dependencies": {}
+    },
+    {
+      "name": "lib-order-c",
+      "version": "1.0.0",
+      "dependencies": {}
+    }
+  ]
+}
