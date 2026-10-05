@@ -1,0 +1,20 @@
+﻿{
+    "name":  "flaky-detector",
+    "version":  "1.0.0",
+    "description":  "Flaky test detection service: repeated runs, classification, confidence, retry advice, SQLite history",
+    "type":  "module",
+    "engines":  {
+                    "node":  "\u003e=24.0.0"
+                },
+    "scripts":  {
+                    "start":  "node src/index.ts",
+                    "demo":  "node scripts/demo.ts",
+                    "test":  "node --test --test-isolation=none \"tests/*.test.ts\"",
+                    "typecheck":  "tsc --noEmit",
+                    "accept":  "node scripts/accept.ts"
+                },
+    "devDependencies":  {
+                            "@types/node":  "24.0.15",
+                            "typescript":  "5.8.3"
+                        }
+}
