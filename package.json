@@ -1,0 +1,16 @@
+{
+  "name": "mock-server-b",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HTTP 模拟服务器：通配符路由、序号化响应、延迟、请求记录与诊断接口",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "start": "node src/server.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node scripts/run-tests.ts",
+    "accept": "node scripts/accept.ts"
+  }
+}

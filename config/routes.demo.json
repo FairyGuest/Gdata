@@ -1,0 +1,73 @@
+{
+  "routes": [
+    {
+      "id": "user-by-id",
+      "method": "GET",
+      "path": "/api/users/*",
+      "responses": [
+        {
+          "status": 200,
+          "headers": {
+            "x-mock": "first"
+          },
+          "body": {
+            "id": 1,
+            "name": "Alice",
+            "attempt": 1
+          }
+        },
+        {
+          "status": 200,
+          "headers": {
+            "x-mock": "second"
+          },
+          "body": {
+            "id": 1,
+            "name": "Alice",
+            "attempt": 2
+          }
+        },
+        {
+          "status": 500,
+          "body": {
+            "error": "upstream broken on 3rd call"
+          }
+        }
+      ]
+    },
+    {
+      "id": "slow-report",
+      "method": "GET",
+      "path": "/api/reports/**",
+      "responses": [
+        {
+          "status": 200,
+          "delayMs": 300,
+          "body": {
+            "report": "ok"
+          }
+        }
+      ],
+      "onExhausted": "repeat-last"
+    },
+    {
+      "id": "create-order",
+      "method": "POST",
+      "path": "/api/orders",
+      "bodyMatch": {
+        "json": {
+          "sku": "A-1"
+        }
+      },
+      "responses": [
+        {
+          "status": 201,
+          "body": {
+            "orderId": "ord-1"
+          }
+        }
+      ],
+      "onExhausted": "repeat-last"
+    }
+  ]
+}
