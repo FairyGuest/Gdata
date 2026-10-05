@@ -1,0 +1,15 @@
+﻿{
+  "name": "test-reporter-a",
+  "version": "1.0.0",
+  "description": "Test report aggregation service",
+  "type": "module",
+  "engines": { "node": ">=22.6.0" },
+  "scripts": {
+    "start": "node src/server.ts",
+    "test": "node tests/all.ts",
+    "demo": "node scripts/demo.ts",
+    "accept": "node scripts/accept.ts"
+  },
+  "dependencies": {}
+}
+
