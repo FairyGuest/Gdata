@@ -1,0 +1,15 @@
+{
+  "name": "lint-engine-a",
+  "version": "1.0.0",
+  "description": "Rule-based lint engine for TypeScript sources with SQLite-backed history and diff",
+  "type": "module",
+  "engines": { "node": ">=22.6" },
+  "scripts": {
+    "start": "node src/index.ts",
+    "test": "node --test --test-isolation=none \"test/**/*.test.ts\"",
+    "demo": "node scripts/demo.mjs",
+    "accept": "node scripts/accept.mjs"
+  },
+  "dependencies": { "fastify": "file:vendor/fastify" },
+  "devDependencies": {}
+}

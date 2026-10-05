@@ -1,0 +1,9 @@
+{
+  "name": "fastify",
+  "version": "5.0.0-local",
+  "description": "Offline vendored minimal Fastify-compatible HTTP framework. Swap for upstream fastify@5 when network is available.",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": { ".": { "types": "./index.d.ts", "import": "./index.js" } }
+}

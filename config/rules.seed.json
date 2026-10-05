@@ -1,0 +1,37 @@
+[
+  {
+    "name": "no-eval",
+    "enabled": true,
+    "severity": "error",
+    "target": { "kind": "regex", "pattern": "\\beval\\s*\\(" },
+    "message": "eval() is forbidden"
+  },
+  {
+    "name": "no-todo-comment",
+    "enabled": true,
+    "severity": "warning",
+    "target": { "kind": "regex", "pattern": "TODO" },
+    "message": "TODO marker left in code"
+  },
+  {
+    "name": "no-var",
+    "enabled": true,
+    "severity": "warning",
+    "target": { "kind": "node", "nodeType": "variable_declaration", "pattern": "^\\s*var\\b" },
+    "message": "use let/const instead of var"
+  },
+  {
+    "name": "no-require-import",
+    "enabled": true,
+    "severity": "error",
+    "target": { "kind": "node", "nodeType": "import_statement", "pattern": "require\\(" },
+    "message": "use ES module import instead of require()"
+  },
+  {
+    "name": "no-magic-string",
+    "enabled": false,
+    "severity": "info",
+    "target": { "kind": "node", "nodeType": "string_literal" },
+    "message": "string literal found (informational)"
+  }
+]
