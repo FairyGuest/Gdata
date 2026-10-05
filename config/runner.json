@@ -1,0 +1,10 @@
+{
+  "host": "127.0.0.1",
+  "port": 3100,
+  "pattern": "**/*.test.js",
+  "timeoutMs": 5000,
+  "parallel": 4,
+  "maxParallel": 16,
+  "maxConcurrentRuns": 4,
+  "dbPath": "data/results.db"
+}

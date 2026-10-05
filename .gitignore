@@ -1,0 +1,4 @@
+node_modules/
+data/
+demo/**/*.marker.txt
+.npm-cache/_logs/

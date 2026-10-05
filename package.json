@@ -1,0 +1,24 @@
+{
+  "name": "test-runner-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Test runner service: discovers, executes (ordered/parallel), classifies and reports test results.",
+  "scripts": {
+    "start": "node src/index.ts",
+    "test": "node tests/run-all.ts",
+    "typecheck": "tsc --noEmit",
+    "accept": "node scripts/accept.ts"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "dependencies": {
+    "fastify": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
+
