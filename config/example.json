@@ -1,0 +1,12 @@
+﻿{
+  "host": "127.0.0.1",
+  "port": 4100,
+  "dbPath": "data/factory.db",
+  "limits": {
+    "maxRows": 10000,
+    "maxDepth": 8,
+    "maxArrayItems": 1000,
+    "maxPatternAttempts": 5000
+  }
+}
+
