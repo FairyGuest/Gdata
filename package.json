@@ -1,0 +1,21 @@
+{
+  "name": "snapshot-test-service",
+  "version": "1.0.0",
+  "description": "Structured snapshot testing service with field-level diffs",
+  "type": "module",
+  "engines": { "node": ">=22.6.0" },
+  "scripts": {
+    "start": "node src/server/index.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node scripts/runAllTests.ts",
+    "typecheck": "node node_modules/typescript/lib/tsc.js --noEmit",
+    "accept": "node scripts/accept.ts"
+  },
+  "dependencies": {
+    "fastify": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "@types/node": "24.0.15"
+  }
+}

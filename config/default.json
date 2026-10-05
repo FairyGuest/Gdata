@@ -1,0 +1,8 @@
+{
+  "port": 4319,
+  "host": "127.0.0.1",
+  "dbPath": "data/snapshots.db",
+  "maxPayloadBytes": 1048576,
+  "maxSnapshots": 10000,
+  "logFile": "logs/service.log"
+}
