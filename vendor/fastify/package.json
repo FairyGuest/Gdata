@@ -1,0 +1,7 @@
+{
+  "name": "fastify",
+  "version": "5.0.0-local",
+  "description": "Offline drop-in subset of the Fastify API. Replace with upstream fastify when network is available.",
+  "type": "module",
+  "main": "index.js"
+}

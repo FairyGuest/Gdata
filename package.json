@@ -1,0 +1,18 @@
+{
+  "name": "load-tester-b",
+  "version": "1.0.0",
+  "description": "HTTP load testing service: configurable concurrency, latency stats, SQLite history",
+  "type": "module",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "start": "node src/index.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node tests/stats.test.ts && node tests/engine.test.ts && node tests/api.test.ts",
+    "accept": "node scripts/accept.ts"
+  },
+  "dependencies": {
+    "fastify": "file:vendor/fastify"
+  }
+}
