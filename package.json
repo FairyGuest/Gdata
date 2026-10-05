@@ -1,0 +1,23 @@
+{
+  "name": "test-report-aggregator",
+  "version": "1.0.0",
+  "description": "Aggregates test run results into structured reports with history diffing",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/index.js",
+    "test": "npm run build && node --test --test-isolation=none \"dist/test/*.test.js\"",
+    "demo": "npm run build && node scripts/demo.mjs",
+    "accept": "npm run build && node --test --test-isolation=none \"dist/test/*.test.js\" && node scripts/accept.mjs",
+    "setup:offline": "node scripts/offline-install.mjs"
+  },
+  "dependencies": {
+    "fastify": "5.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "typescript": "5.9.3"
+  }
+}
