@@ -1,0 +1,39 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/users/*",
+      "response": { "status": 200, "headers": { "x-source": "demo" }, "body": { "user": "wildcard" } }
+    },
+    {
+      "method": "GET",
+      "path": "/api/files/**",
+      "response": { "status": 200, "body": { "file": "deep-wildcard" } }
+    },
+    {
+      "method": "GET",
+      "path": "/api/seq",
+      "responses": [
+        { "status": 200, "body": { "attempt": 1 } },
+        { "status": 200, "body": { "attempt": 2 } },
+        { "status": 503, "body": { "attempt": 3, "error": "temporary" } }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/orders",
+      "bodyMatch": { "mode": "contains", "expected": { "type": "vip" } },
+      "response": { "status": 201, "body": { "order": "vip-created" } }
+    },
+    {
+      "method": "POST",
+      "path": "/api/orders",
+      "response": { "status": 200, "body": { "order": "normal-created" } }
+    },
+    {
+      "method": "GET",
+      "path": "/api/slow",
+      "response": { "status": 200, "delayMs": 300, "body": { "slow": true } }
+    }
+  ]
+}

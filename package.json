@@ -1,0 +1,23 @@
+{
+  "name": "mock-server-a",
+  "version": "1.0.0",
+  "description": "Configurable HTTP mock server: Fastify + SQLite, sequenced responses, wildcards, request recording",
+  "type": "commonjs",
+  "license": "ISC",
+  "scripts": {
+    "build": "node node_modules/typescript/lib/tsc.js",
+    "typecheck": "node node_modules/typescript/lib/tsc.js --noEmit",
+    "start": "node dist/index.js",
+    "demo": "npm run build && node scripts/demo.mjs",
+    "test": "npm run build && node --test --test-isolation=none test/*.test.mjs",
+    "accept": "npm run build && node scripts/accept.mjs"
+  },
+  "dependencies": {
+    "fastify": "5.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}
