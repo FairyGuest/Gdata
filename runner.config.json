@@ -1,0 +1,6 @@
+{
+  "port": 8787,
+  "defaultTimeoutMs": 5000,
+  "maxConcurrency": 8,
+  "dependencies": {}
+}

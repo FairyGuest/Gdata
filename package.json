@@ -1,0 +1,27 @@
+﻿{
+    "name":  "test-runner-service",
+    "version":  "1.0.0",
+    "description":  "Test runner service: discovery, dependency-ordered/parallel execution, timeout kill, SQLite history, Fastify diagnostics API",
+    "main":  "dist/index.js",
+    "scripts":  {
+                    "build":  "tsc -p tsconfig.json",
+                    "start":  "node dist/index.js",
+                    "demo":  "node demo/demo.mjs",
+                    "test":  "npm run build \u0026\u0026 node tests/run-all.mjs",
+                    "accept":  "npm run build \u0026\u0026 node accept/accept.mjs"
+                },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "MIT",
+    "type":  "commonjs",
+    "dependencies":  {
+                         "fastify":  "^5.12.5"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^24.19.0",
+                            "tsx":  "^4.23.15",
+                            "typescript":  "^5.9.3"
+                        }
+}
