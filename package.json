@@ -1,0 +1,17 @@
+﻿{
+  "name": "test-data-factory",
+  "version": "1.0.0",
+  "description": "Deterministic synthetic test-data factory service (seed-reproducible, constraint-validated)",
+  "type": "module",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "start": "node src/server.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node --test --test-isolation=none test/*.test.ts",
+    "accept": "node scripts/accept.ts"
+  },
+  "dependencies": {
+    "fastify": "^5.0.0"
+  },
+  "license": "MIT"
+}

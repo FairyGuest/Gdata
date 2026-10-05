@@ -1,0 +1,11 @@
+{
+  "port": 3000,
+  "dbPath": "data/factory.db",
+  "limits": {
+    "maxCount": 10000,
+    "maxArrayItems": 1000,
+    "maxStringLength": 4096,
+    "maxPatternAttempts": 20000,
+    "maxNestingDepth": 16
+  }
+}
