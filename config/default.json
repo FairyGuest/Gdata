@@ -1,0 +1,9 @@
+{
+  "server": { "host": "127.0.0.1", "port": 8787 },
+  "store": { "file": "data/snapshots.db" },
+  "limits": {
+    "maxPayloadBytes": 1048576,
+    "maxDiffEntries": 500,
+    "maxSerializedBytes": 1048576
+  }
+}
