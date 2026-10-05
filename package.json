@@ -1,0 +1,14 @@
+﻿{
+  "name": "mutation-testing-service",
+  "version": "1.0.0",
+  "description": "Mutation testing service: generates mutants, runs test suites, reports mutation score",
+  "type": "module",
+  "engines": { "node": ">=23.6" },
+  "scripts": {
+    "start": "node src/index.ts",
+    "test": "node --test --test-isolation=none test/*.test.ts",
+    "demo": "node scripts/demo.mjs",
+    "accept": "node scripts/accept.mjs"
+  },
+  "dependencies": {}
+}
