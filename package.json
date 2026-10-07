@@ -1,0 +1,19 @@
+{
+  "name": "env-drift-service",
+  "version": "1.0.0",
+  "description": "Layered config merge and drift comparison service",
+  "type": "module",
+  "engines": { "node": ">=22.6.0" },
+  "scripts": {
+    "start": "node src/index.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node --test --test-isolation=none tests/*.test.ts",
+    "accept": "node scripts/accept.ts",
+    "typecheck": "node node_modules/typescript/bin/tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "24.0.15",
+    "typescript": "5.8.3"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+  "service": { "name": "billing", "replicas": 1 },
+  "http": { "port": 8080, "timeouts": { "readMs": 5000, "writeMs": 5000 } },
+  "features": { "betaUI": false, "legacyExport": true },
+  "tags": ["core", "billing"],
+  "logging": { "level": "info", "sinks": ["stdout"] }
+}

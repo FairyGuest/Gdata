@@ -1,0 +1,7 @@
+{
+  "service": { "name": "billing", "replicas": 2 },
+  "http": { "port": 9090, "timeouts": { "readMs": 8000, "writeMs": 5000 } },
+  "features": { "betaUI": true },
+  "tags": ["core", "billing", "staging"],
+  "logging": { "level": "debug", "sinks": ["stdout"] }
+}
