@@ -1,0 +1,13 @@
+{
+  "name": "devcontainer-registry",
+  "version": "1.0.0",
+  "description": "Development environment template registry & provisioning service",
+  "type": "module",
+  "engines": { "node": ">=22.6" },
+  "scripts": {
+    "start": "node src/index.ts",
+    "test": "node --test --test-isolation=none \"test/*.test.ts\"",
+    "demo": "node scripts/demo.ts",
+    "accept": "node scripts/accept.ts"
+  }
+}
