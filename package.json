@@ -1,0 +1,25 @@
+{
+  "name": "namespace-quota-b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node --test --test-isolation=none tests/kernel.test.ts tests/api.test.ts",
+    "typecheck": "tsc --noEmit",
+    "accept": "node scripts/accept.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "fastify": "^5.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.1",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}
