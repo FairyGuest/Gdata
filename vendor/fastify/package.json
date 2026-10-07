@@ -1,0 +1,8 @@
+{
+  "name": "fastify",
+  "version": "5.0.0-local.0",
+  "description": "Local Fastify-compatible minimal web framework (offline vendored substitute; implements the Fastify subset used by this service: get/post/delete routes with params, inject, listen, reply.code/send).",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts"
+}

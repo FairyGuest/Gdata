@@ -1,0 +1,8 @@
+{
+  "portMin": 20000,
+  "portMax": 20009,
+  "leaseTtlMs": 30000,
+  "dbPath": ":memory:",
+  "httpHost": "127.0.0.1",
+  "httpPort": 8080
+}
