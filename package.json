@@ -1,0 +1,17 @@
+﻿{
+  "name": "preview-env-lifecycle",
+  "version": "1.0.0",
+  "description": "Preview environment lifecycle service: template instantiation, branch mutex, TTL, quota pool",
+  "type": "module",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "start": "node src/server.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node tests/engine.test.ts",
+    "accept": "node scripts/accept.ts"
+  },
+  "dependencies": {
+    "fastify": "^5.2.0"
+  },
+  "license": "MIT"
+}
