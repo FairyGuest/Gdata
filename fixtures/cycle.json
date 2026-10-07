@@ -1,0 +1,8 @@
+{
+  "name": "cyclic",
+  "services": [
+    { "name": "a", "port": 9001, "dependsOn": ["c"], "outputs": [], "env": {}, "healthCheck": { "kind": "fixture", "result": "healthy" } },
+    { "name": "b", "port": 9002, "dependsOn": ["a"], "outputs": [], "env": {}, "healthCheck": { "kind": "fixture", "result": "healthy" } },
+    { "name": "c", "port": 9003, "dependsOn": ["b"], "outputs": [], "env": {}, "healthCheck": { "kind": "fixture", "result": "healthy" } }
+  ]
+}

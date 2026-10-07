@@ -1,0 +1,7 @@
+{
+  "name": "conflicting",
+  "services": [
+    { "name": "alpha", "port": 9000, "dependsOn": [], "outputs": [], "env": {}, "healthCheck": { "kind": "fixture", "result": "healthy" } },
+    { "name": "beta", "port": 9000, "dependsOn": [], "outputs": [], "env": {}, "healthCheck": { "kind": "fixture", "result": "healthy" } }
+  ]
+}

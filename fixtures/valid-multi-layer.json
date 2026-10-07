@@ -1,0 +1,10 @@
+{
+  "name": "shop",
+  "services": [
+    { "name": "db", "port": 5432, "dependsOn": [], "outputs": ["DB_URL"], "env": {}, "healthCheck": { "kind": "fixture", "result": "healthy" } },
+    { "name": "cache", "port": 6379, "dependsOn": [], "outputs": ["CACHE_URL"], "env": {}, "healthCheck": { "kind": "fixture", "result": "healthy" } },
+    { "name": "api", "port": 8080, "dependsOn": ["db", "cache"], "outputs": ["API_URL"], "env": { "DATABASE_URL": "${DB_URL}", "CACHE": "${CACHE_URL}" }, "healthCheck": { "kind": "fixture", "result": "healthy" } },
+    { "name": "worker", "port": 8081, "dependsOn": ["db"], "outputs": [], "env": { "DATABASE_URL": "${DB_URL}" }, "healthCheck": { "kind": "fixture", "result": "healthy" } },
+    { "name": "gateway", "port": 3000, "dependsOn": ["api", "worker"], "outputs": [], "env": { "API": "${API_URL}" }, "healthCheck": { "kind": "fixture", "result": "healthy" } }
+  ]
+}

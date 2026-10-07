@@ -1,0 +1,9 @@
+{
+  "name": "failing-health",
+  "services": [
+    { "name": "db", "port": 5432, "dependsOn": [], "outputs": ["DB_URL"], "env": {}, "healthCheck": { "kind": "fixture", "result": "healthy" } },
+    { "name": "api", "port": 8080, "dependsOn": ["db"], "outputs": [], "env": { "DATABASE_URL": "${DB_URL}" }, "healthCheck": { "kind": "fixture", "result": "failing" } },
+    { "name": "worker", "port": 8081, "dependsOn": ["db"], "outputs": [], "env": { "DATABASE_URL": "${DB_URL}" }, "healthCheck": { "kind": "fixture", "result": "healthy" } },
+    { "name": "gateway", "port": 3000, "dependsOn": ["api", "worker"], "outputs": [], "env": {}, "healthCheck": { "kind": "fixture", "result": "healthy" } }
+  ]
+}

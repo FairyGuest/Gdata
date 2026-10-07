@@ -1,0 +1,6 @@
+{
+  "name": "missing-env",
+  "services": [
+    { "name": "svc", "port": 9100, "dependsOn": [], "outputs": [], "env": { "CONN": "${MISSING_KEY}" }, "healthCheck": { "kind": "fixture", "result": "healthy" } }
+  ]
+}

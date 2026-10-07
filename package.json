@@ -1,0 +1,20 @@
+{
+  "name": "compose-orchestrator-b",
+  "version": "1.0.0",
+  "description": "Service orchestration validation and start/stop ordering service",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node test/run-all.ts",
+    "start": "node src/index.ts",
+    "accept": "node scripts/accept.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^5.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.3"
+  }
+}
