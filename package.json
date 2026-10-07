@@ -1,0 +1,28 @@
+{
+  "name": "env-secrets-binding",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Environment secret binding & injection service (org/project/env scoped)",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "node scripts/install-offline.cjs",
+    "build": "node node_modules/typescript/lib/tsc.js -p tsconfig.build.json",
+    "typecheck": "node node_modules/typescript/lib/tsc.js --noEmit",
+    "test": "npm run build && node --test --test-isolation=none \"dist/test/*.test.js\"",
+    "start": "npm run build && node dist/src/index.js",
+    "accept": "npm run build && node dist/scripts/accept.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "12.11.1",
+    "fastify": "5.12.5"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "7.6.13",
+    "@types/node": "24.19.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}
