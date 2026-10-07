@@ -1,0 +1,7 @@
+{
+  "quotaPerOwner": 2,
+  "deploySeconds": 30,
+  "dbPath": "data/preview-env.db",
+  "templatePath": "fixtures/template.json",
+  "port": 4173
+}

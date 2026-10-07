@@ -1,0 +1,12 @@
+{
+  "name": "webapp-preview",
+  "services": ["web", "api", "worker", "postgres"],
+  "params": {
+    "imageTag": { "type": "string", "default": "latest" },
+    "replicas": { "type": "number", "default": 1 },
+    "enableDebug": { "type": "boolean", "default": false },
+    "databaseUrl": { "type": "string", "default": "sqlite:///:memory:" }
+  },
+  "defaultTtlSeconds": 3600,
+  "maxTtlSeconds": 86400
+}
