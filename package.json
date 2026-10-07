@@ -1,0 +1,23 @@
+{
+  "name": "incremental-build-orchestrator",
+  "version": "1.0.0",
+  "description": "File-change driven incremental build orchestration service (TypeScript/Node/Fastify/SQLite)",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "start": "node src/main.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node --test --test-isolation=none \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "accept": "node --test --test-isolation=none \"test/*.test.ts\" && node scripts/accept.ts"
+  },
+  "dependencies": {
+    "fastify": "5.12.5"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

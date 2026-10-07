@@ -1,0 +1,9 @@
+{
+  "targets": [
+    { "name": "lib",  "watchPaths": ["lib.txt"],  "dependencies": [] },
+    { "name": "util", "watchPaths": ["util.txt"], "dependencies": [] },
+    { "name": "app",  "watchPaths": ["app.txt"],  "dependencies": ["lib", "util"] },
+    { "name": "ui",   "watchPaths": ["ui.txt"],   "dependencies": ["lib"] },
+    { "name": "docs", "watchPaths": ["docs.txt"], "dependencies": [] }
+  ]
+}
