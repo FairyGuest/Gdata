@@ -1,0 +1,18 @@
+﻿{
+  "name": "tunnel-lease-a",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Port tunnel lease management service (Fastify + SQLite, VirtualClock-driven expiry)",
+  "engines": { "node": ">=22.6" },
+  "scripts": {
+    "start": "node src/index.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node test/kernel.test.ts",
+    "typecheck": "tsc --noEmit",
+    "accept": "node scripts/accept.ts"
+  },
+  "dependencies": { "fastify": "^5.12.5" },
+  "devDependencies": { "typescript": "^5.9.3" }
+}
+
