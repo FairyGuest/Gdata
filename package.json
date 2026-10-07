@@ -1,0 +1,21 @@
+{
+  "name": "namespace-quota-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Simulated cluster namespace & quota management service",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/src/index.js",
+    "demo": "npm run build && node dist/scripts/demo.js",
+    "test": "npm run build && node dist/test/run-all.js",
+    "accept": "npm run build && node dist/scripts/accept.js"
+  },
+  "dependencies": {
+    "fastify": "5.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.1",
+    "typescript": "5.9.3"
+  }
+}
