@@ -1,0 +1,16 @@
+{
+  "name": "compose-orchestrator",
+  "version": "1.0.0",
+  "description": "Service orchestration validation and start/stop ordering service",
+  "type": "module",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "start": "node src/server.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node --test --test-isolation=none \"tests/*.test.ts\"",
+    "accept": "node scripts/accept.ts"
+  },
+  "optionalDependencies": {
+    "fastify": "^5.2.0"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "webshop",
+  "services": [
+    {
+      "name": "gateway",
+      "ports": [4000],
+      "dependsOn": ["api"],
+      "env": {},
+      "outputs": [],
+      "health": { "kind": "fixture", "fixture": "healthy" }
+    },
+    {
+      "name": "api",
+      "ports": [8080],
+      "dependsOn": ["postgres", "redis"],
+      "env": { "DATABASE_URL": "${postgres.DSN}", "CACHE_URL": "${redis.URL}" },
+      "outputs": [],
+      "health": { "kind": "fixture", "fixture": "healthy" }
+    },
+    {
+      "name": "worker",
+      "ports": [9090],
+      "dependsOn": ["postgres"],
+      "env": { "DATABASE_URL": "${postgres.DSN}" },
+      "outputs": [],
+      "health": { "kind": "fixture", "fixture": "healthy" }
+    },
+    {
+      "name": "postgres",
+      "ports": [5432],
+      "dependsOn": [],
+      "env": {},
+      "outputs": ["DSN"],
+      "health": { "kind": "fixture", "fixture": "healthy" }
+    },
+    {
+      "name": "redis",
+      "ports": [6379],
+      "dependsOn": [],
+      "env": {},
+      "outputs": ["URL"],
+      "health": { "kind": "fixture", "fixture": "healthy" }
+    }
+  ]
+}
