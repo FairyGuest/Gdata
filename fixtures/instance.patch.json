@@ -1,0 +1,9 @@
+{
+  "service": {
+    "port": 9090
+  },
+  "limits": {
+    "cpu": "1000m"
+  },
+  "instanceId": "i-local-01"
+}

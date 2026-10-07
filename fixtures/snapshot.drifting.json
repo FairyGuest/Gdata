@@ -1,0 +1,25 @@
+{
+  "service": {
+    "name": "checkout",
+    "port": 8080,
+    "replicas": 3
+  },
+  "features": {
+    "search": true
+  },
+  "limits": {
+    "cpu": "1000m"
+  },
+  "tags": [
+    "dev",
+    "canary"
+  ],
+  "logging": {
+    "level": "debug",
+    "format": "json"
+  },
+  "instanceId": "i-local-01",
+  "runtime": {
+    "node": "v24.14.1"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "service": {
+    "name": "checkout",
+    "port": 8080,
+    "replicas": 2
+  },
+  "features": {
+    "search": true,
+    "legacyCheckout": false
+  },
+  "limits": {
+    "cpu": "500m",
+    "memory": "256Mi"
+  },
+  "tags": [
+    "base",
+    "v1"
+  ],
+  "logging": {
+    "level": "info",
+    "format": "json"
+  },
+  "deprecated": {
+    "oldFlag": true
+  }
+}

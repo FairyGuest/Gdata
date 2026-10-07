@@ -1,0 +1,23 @@
+{
+  "service": {
+    "name": "checkout",
+    "port": 9090,
+    "replicas": 3
+  },
+  "features": {
+    "search": true
+  },
+  "limits": {
+    "cpu": "1000m",
+    "memory": "256Mi"
+  },
+  "tags": [
+    "dev",
+    "canary"
+  ],
+  "logging": {
+    "level": "debug",
+    "format": "json"
+  },
+  "instanceId": "i-local-01"
+}
