@@ -1,0 +1,17 @@
+{
+  "name": "build-watcher",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "File-change driven incremental build orchestration service",
+  "engines": { "node": ">=22.6.0" },
+  "scripts": {
+    "start": "node src/server.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node --test --test-isolation=none \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "accept": "node scripts/accept.ts"
+  },
+  "dependencies": { "fastify": "^5.12.5" },
+  "devDependencies": { "typescript": "^5.9.3" }
+}
